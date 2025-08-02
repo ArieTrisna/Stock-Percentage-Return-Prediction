@@ -1,27 +1,60 @@
-# Stock Percentage Return Prediction Using Linear Regression
+# 📊 Stock Percentage Return Prediction Using Linear Regression
 
-## Objective
-To analyze and predict how much of percentage return daily based on past historical data and technical indicators such as RSI, Moving Average, and Moving Average Convergence Divergence. Prediction are made by applying supervised learning methods with Linear Regression model.
+## 🎯 Objective  
+This project aims to **predict the daily percentage return** of the stock **BBCA.JK** (Bank Central Asia, one of Indonesia’s largest banks) using **historical price data and technical indicators** such as **RSI**, **Moving Average (MA)**, and **MACD**. A **Linear Regression** model is applied as a supervised learning method to estimate returns based on engineered features.
 
-## Methodology
-1. Data Collecting and Cleaning
-2. Explatory Data Analysis
-3. Feature Engineering
-4. Model Training & Evaluation
-5. Summary
+---
 
-## Dataset
-In this project we are using yfinance API to collect the data. 
-Stock that are used in this topic is BBCA.JK, it is one of the biggest bank from Indonesia.
+## 🧠 Methodology  
+1. **Data Collection & Cleaning** – Retrieved price data using `yfinance` and prepared it for modeling  
+2. **Exploratory Data Analysis** – Analyzed historical trends and patterns using visualizations  
+3. **Feature Engineering** – Generated technical indicators (RSI, MA, MACD) to use as input features  
+4. **Model Training & Evaluation** – Trained a Linear Regression model and assessed performance  
+5. **Summary & Insights** – Reflected on outcomes and potential improvements
 
-## Summary
-Linear Regression surprisingly performs quite good for stock return prediction, even if the stock market or financial market is really volatile and there are so many things that could affect it's movement, but the machine learning can predict pretty well using historical data and technical indicators. It is true that the value is off a little bit from true value but Linear Regression can catch bit of momentum when they go down and go up. With more suitable features and tuning in the future, the model can be more accurate than what it is now.
-Evaluation Metrics Results:
-1. MAE = 0.042
-Means that on average the model's prediction are approx. 0.042 away from the true value
-2. MSE = 0.0023
-Means that on average the squared prediction errors are approx. 0.0023
-3. R-squared = -0.197 
-Indicates that the model can explain approximately -19.7% of the variance in values
-4. RMSE = 0.048
-Indicates that on average the model's predictions have an error of approximately 0.048 in the same units as the values.
+---
+
+## 📈 Dataset  
+- **Source**: [Yahoo Finance via `yfinance` API](https://pypi.org/project/yfinance/)  
+- **Stock**: `BBCA.JK` — Bank Central Asia (Indonesia)  
+- Data includes daily price data used to calculate returns and indicators
+
+---
+
+## 📉 Model Performance Summary  
+Despite the volatility of financial markets, the Linear Regression model was able to **capture some upward and downward momentum**, demonstrating the predictive power of technical indicators. While the model doesn’t perfectly align with actual returns, it provides a useful baseline and shows room for improvement with more sophisticated techniques or additional features.
+
+**Evaluation Metrics:**
+- **MAE**: `0.042`  
+  → On average, the predictions are off by ~0.042 from actual returns  
+- **MSE**: `0.0023`  
+  → The average squared prediction error is ~0.0023  
+- **R-squared**: `-0.197`  
+  → The model explains -19.7% of the variance (indicating poor generalization in current form)  
+- **RMSE**: `0.048`  
+  → On average, predictions deviate from actual values by ~0.048
+
+---
+
+## 📌 Key Takeaways  
+- **Linear Regression**, although simple, can provide a useful baseline for stock return prediction  
+- **Technical indicators** like RSI, MA, and MACD serve as effective features for capturing trends  
+- With more **feature engineering**, **regularization**, and possibly **non-linear models**, prediction accuracy can be significantly improved
+
+---
+
+## 🙋‍♂️ About Me  
+Hi! I’m **Arie Trisnasaputra**, a recent business & economics graduate from Indonesia currently focused on building my career in data. My work primarily involves **Python, SQL**, and **machine learning** applied to real-world data problems in finance.
+
+I'm actively seeking **entry-level** or **internship roles** in data analysis, data science, or related positions.
+
+📬 Let's connect:  
+- [LinkedIn](https://www.linkedin.com/in/arietrisna/)  
+- [Email](mailto:arie.trisnasaputra.17@gmail.com)  
+- [Instagram](https://www.instagram.com/arietrisn_/)
+
+---
+
+## 📎 Acknowledgements  
+- Data provided by [Yahoo Finance](https://finance.yahoo.com/) via `yfinance`  
+- Inspired by financial time-series modeling and machine learning use cases in real markets
